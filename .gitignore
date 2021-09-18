@@ -145,9 +145,5 @@ gen
 .vscode/
 iclr2021_checkpoints/
 result/
-data/
-!eagle-eye/data
 *wandb/
 *DS_Store
-!hrankplus/data
-!EagleEye/data
