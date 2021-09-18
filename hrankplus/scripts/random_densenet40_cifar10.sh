@@ -1,0 +1,12 @@
+python main.py \
+--job_dir ../result/hrankplus/densenet_40/random \
+--data_dir ../data \
+--use_pretrain \
+--pretrain_dir ../iclr2021_checkpoints/hrankplus/cifar/cifar10/densenet_40.pt \
+--arch densenet_40 \
+--compress_rate [0.]+[0.4]*12+[0.]+[0.4]*12+[0.]+[0.4]*12 \
+--lr 0.1 \
+--use_onecycle \
+--weight_decay 0.0005 \
+--epochs 300 \
+--random_rank

@@ -1,0 +1,12 @@
+python main.py \
+--job_dir ../result/hrankplus/resnet_110/random \
+--data_dir ../data \
+--use_pretrain \
+--pretrain_dir ../iclr2021_checkpoints/hrankplus/cifar/cifar10/resnet_110.pt \
+--arch resnet_110 \
+--compress_rate [0.]+[0.4]*2+[0.5]*18+[0.65]*36 \
+--lr 0.1 \
+--use_onecycle \
+--epochs 300 \
+--weight_decay 0.0005 \
+--random_rank

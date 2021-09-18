@@ -1,0 +1,15 @@
+python vggprune.py \
+--dataset cifar10 \
+-v A \
+--model ../../../iclr2021_checkpoints/norm_pruning/filters/cifar/cifar10/vgg_16.pt \
+--save ../../../result/norm_pruning/filters/vgg16/standard &&
+
+python main_finetune.py \
+--refine ../../../result/norm_pruning/filters/vgg16/standard/pruned.pth.tar \
+--save ../../../result/norm_pruning/filters/vgg16/standard \
+--dataset cifar10 \
+--arch vgg \
+--depth 16 \
+--use_lr_rewind \
+--epochs 136 \
+--wandb_name vgg_16_A_lr_rewind_136epochs

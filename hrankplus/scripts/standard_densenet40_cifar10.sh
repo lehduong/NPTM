@@ -1,0 +1,11 @@
+python main.py \
+--job_dir ../result/hrankplus/densenet_40/standard \
+--data_dir ../data \
+--use_pretrain \
+--pretrain_dir ../iclr2021_checkpoints/hrankplus/cifar/cifar10/densenet_40.pt \
+--arch densenet_40 \
+--compress_rate [0.]+[0.4]*12+[0.]+[0.4]*12+[0.]+[0.4]*12 \
+--lr 0.01 \
+--weight_decay 0.002 \
+--epochs 300 \
+--lr_decay_step "150,225"

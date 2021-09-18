@@ -1,0 +1,11 @@
+python main.py \
+--job_dir ../result/hrankplus/resnet_110/standard \
+--data_dir ../data \
+--use_pretrain \
+--pretrain_dir ../iclr2021_checkpoints/hrankplus/cifar/cifar10/resnet_110.pt \
+--arch resnet_110 \
+--compress_rate [0.]+[0.4]*2+[0.5]*18+[0.65]*36 \
+--lr 0.01 \
+--epochs 300 \
+--weight_decay 0.005 \
+--lr_decay_step "150,225"
