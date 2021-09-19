@@ -2,7 +2,7 @@
 
 This repository contains the implementation of the paper [Network Pruning that Matters: A Case Study on Retraining Variants](https://openreview.net/forum?id=Cb54AMqHQFP).
 
-[Duong H. Le](https://lehduong.github.io), [Binh-Son Hua](sonhua.github.io) (ICLR 2021)
+[Duong H. Le](https://lehduong.github.io), [Binh-Son Hua](https://sonhua.github.io) (ICLR 2021)
 
 <img src="./asset/teaser.png" width="1000">
 
